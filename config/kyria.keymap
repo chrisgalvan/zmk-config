@@ -17,10 +17,10 @@
 
         default_layer {
             bindings = <
-   &kp TAB        &kp Q   &kp W     &kp E     &kp R       &kp T                                          &kp Y   &kp U      &kp I    &kp O     &kp P  &kp MINUS
-   &kp ESC        &kp A   &kp S     &kp D     &kp F       &kp G                                          &kp H   &kp J      &kp K    &kp L  &kp SEMI    &kp SQT
- &kp GRAVE  &mt LCTRL Z   &kp X     &kp C     &kp V       &kp B   &kp LBKT   &mo 2   &mo 1  &kp RBKT     &kp N   &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                                 &kp LALT  &kp LGUI  &kp LSHIFT  &kp SPACE   &mo 1   &mo 2   &kp RET  &kp BSPC   &mo 1   &kp BSLH
+&kp TAB    &kp Q        &kp W  &kp E     &kp R     &kp T                                          &kp Y     &kp U  &kp I      &kp O    &kp P     &kp MINUS
+&kp ESC    &kp A        &kp S  &kp D     &kp F     &kp G                                          &kp H     &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp GRAVE  &mt LCTRL Z  &kp X  &kp C     &kp V     &kp B       &kp LBKT   &mo 2  &mo 1  &kp RBKT  &kp N     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                               &kp LALT  &kp LGUI  &kp LSHIFT  &kp SPACE  &mo 1  &mo 2  &kp RET   &kp BSPC  &mo 1  &kp BSLH
             >;
         };
 
@@ -28,10 +28,10 @@
 
         nav {
             bindings = <
- &trans  &trans  &trans  &trans    &kp LC(UP)   &trans                                  &trans    &trans    &kp UP     &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &kp LC(UP)    &trans                                   &trans  &trans    &kp UP    &trans     &trans  &trans
  &trans  &trans  &trans  &trans  &kp LC(DOWN)  &kp RET                                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
- &trans  &trans  &trans  &trans       &kp F16   &trans  &trans   &mo 5  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
-                         &trans        &trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
+ &trans  &trans  &trans  &trans  &kp F16       &trans   &trans  &mo 5   &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans
+                         &trans  &trans        &trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans
             >;
         };
 
@@ -39,10 +39,10 @@
 
         num {
             bindings = <
- &trans    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                                     &kp N6    &kp N7     &kp N8    &kp N9    &kp N0  &trans
+ &trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                                     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
  &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                                  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
- &trans    &trans  &trans    &trans    &trans     &trans  &trans  &trans   &mo 4  &trans     &trans    &trans     &trans    &trans    &trans  &trans
-                             &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans
+ &trans  &trans    &trans  &trans    &trans    &trans     &trans  &trans  &mo 4   &trans  &trans     &trans    &trans     &trans    &trans    &trans
+                           &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans
             >;
         };
 
@@ -50,10 +50,10 @@
 
         adj {
             bindings = <
-   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                  &trans      &trans  &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans
- &out OUT_BLE        &trans        &trans        &trans        &trans        &trans                                  &trans    &kp C_PP    &kp C_PREV    &kp C_NEXT  &trans  &trans
-       &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans
-                                                 &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans      &trans        &trans
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                  &trans  &trans      &kp C_BRI_DN  &kp C_BRI_UP  &trans  &trans
+&out OUT_BLE  &trans        &trans        &trans        &trans        &trans                                        &trans  &kp C_PP    &kp C_PREV    &kp C_NEXT    &trans  &trans
+&trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans
+                                          &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans      &trans
             >;
         };
 
