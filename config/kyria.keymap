@@ -28,10 +28,10 @@
 
         nav {
             bindings = <
- &trans  &trans  &trans  &trans  &kp LC(UP)    &trans                                   &trans    &trans    &trans  &trans     &trans      &trans
- &trans  &trans  &trans  &trans  &kp LC(DOWN)  &kp RET                                  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp RSHIFT  &trans
- &trans  &trans  &trans  &trans  &kp F16       &trans   &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans      &trans
-                         &trans  &trans        &trans   &trans  &trans  &trans  &trans  &trans    &trans    &trans
+ &trans  &trans  &trans  &trans  &kp LC(UP)    &trans                                   &trans        &trans        &trans         &trans         &trans      &trans
+ &trans  &trans  &trans  &trans  &kp LC(DOWN)  &kp RET                                  &kp LEFT      &kp DOWN      &kp UP         &kp RIGHT      &kp RSHIFT  &trans
+ &trans  &trans  &trans  &trans  &kp F16       &trans   &trans  &trans  &trans  &trans  &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &trans      &trans
+                         &trans  &trans        &trans   &trans  &trans  &trans  &trans  &trans        &trans        &trans
             >;
         };
 
