@@ -26,8 +26,8 @@ include:
   - board: nice_nano@2.0.0
     shield: settings_reset
   # dongle
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: kyria_rev2_dongle prospector_adapter
   # dongle settings
-  - board: seeeduino_xiao_ble
+  - board: xiao_ble
     shield: settings_reset
