@@ -14,9 +14,9 @@ manifest:
       revision: main
       import: app/west.yml
     # dongle
-    - name: prospector-zmk-module  
+    - name: prospector-zmk-module
       remote: carrefinho
-      revision: main
+      revision: feat/new-status-screens
     # nice-view-battery
     - name: nice-view-battery
       remote: infely
