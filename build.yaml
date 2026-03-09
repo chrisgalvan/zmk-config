@@ -26,8 +26,8 @@ include:
   - board: nice_nano@2.0.0//zmk
     shield: settings_reset
   # dongle
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: kyria_rev2_dongle prospector_adapter
   # dongle settings
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: settings_reset
