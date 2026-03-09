@@ -14,16 +14,16 @@
 ---
 include:
   # left
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: kyria_rev2_left nice_view_adapter nice_view_battery
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   # right
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: kyria_rev2_right nice_view_adapter nice_view_battery
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   # settings
-  - board: nice_nano_v2
+  - board: nice_nano@2.0.0
     shield: settings_reset
   # dongle
   - board: seeeduino_xiao_ble
