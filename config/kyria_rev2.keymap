@@ -16,17 +16,19 @@
         // 0
 
         default_layer {
+            display-name = "Default";
             bindings = <
 &kp TAB    &kp Q        &kp W  &kp E      &kp R     &kp T                                         &kp Y      &kp U     &kp I      &kp O    &kp P     &kp MINUS
 &kp ESC    &kp A        &kp S  &kp D      &kp F     &kp G                                         &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp GRAVE  &mt LCTRL Z  &kp X  &kp C      &kp V     &kp B     &kp LBKT    &mo 1  &mo 5  &kp RBKT  &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
-                               &kp GLOBE  &kp LALT  &kp LGUI  &kp LSHIFT  &mo 1  &mo 5  &kp RET   &kp SPACE  &kp BSPC  &kp BSLH
+&kp GRAVE  &mt LCTRL Z  &kp X  &kp C      &kp V     &kp B     &kp LBKT    &mo 1  &mo 2  &kp RBKT  &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp EQUAL
+                               &kp GLOBE  &kp LALT  &kp LGUI  &kp LSHIFT  &mo 1  &mo 2  &kp RET   &kp SPACE  &kp BSPC  &kp BSLH
             >;
         };
 
         // 1
 
         nav {
+            display-name = "Nav";
             bindings = <
  &trans  &trans  &trans  &trans  &kp LC(UP)    &trans                                   &trans        &trans        &trans         &trans         &trans      &trans
  &trans  &trans  &trans  &trans  &kp LC(DOWN)  &kp RET                                  &kp LEFT      &kp DOWN      &kp UP         &kp RIGHT      &kp RSHIFT  &trans
@@ -38,11 +40,12 @@
         // 2
 
         num {
+            display-name = "Num";
             bindings = <
- &trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                                     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
- &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                                  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
- &trans  &trans    &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans    &trans    &trans
-                           &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans
+ &trans  &trans     &trans    &trans     &trans    &trans                                     &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+ &trans  &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT                                  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+ &trans  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &trans  &trans  &trans  &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
+                              &trans     &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -57,27 +60,16 @@
             >;
         };
 
-    // duplicated nav and num layers to resolve conflict with conditional layer 3
+        // duplicated nav and num layers to resolve conflict with conditional layer 3
 
-    // 4
-
-        navcopy {
-            bindings = <
- &trans  &trans  &trans  &trans    &kp LC(UP)   &trans                                  &trans    &trans    &kp UP     &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &kp LC(DOWN)  &kp RET                                  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
- &trans  &trans  &trans  &trans       &kp F16   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans  &trans  &trans
-                         &trans        &trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
-            >;
-        };
-
-        // 5
+        // 4
 
         numcopy {
             bindings = <
- &trans  &trans     &trans    &trans     &trans    &trans                                     &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
- &trans  &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT                                  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
- &trans  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR   &trans  &trans  &trans  &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans  &trans
-                              &trans     &trans    &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5                                     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &trans
+ &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                                  &kp CARET  &kp AMPS  &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+ &trans  &trans    &trans  &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans     &trans    &trans    &trans
+                           &trans    &trans    &trans     &trans  &trans  &trans  &trans  &trans     &trans    &trans
             >;
         };
     };
@@ -88,7 +80,7 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <1 5>;// nav && num
+            if-layers = <1 2>;// nav && num
             then-layer = <3>;// adj
         };
     };
