@@ -13,6 +13,12 @@
 #
 ---
 include:
+  # dongle
+  - board: xiao_ble//zmk
+    shield: kyria_rev2_dongle prospector_adapter
+  # dongle settings
+  - board: xiao_ble//zmk
+    shield: settings_reset
   # left
   - board: nice_nano@2.0.0//zmk
     shield: kyria_rev2_left nice_view_adapter nice_view
@@ -24,10 +30,4 @@ include:
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   # settings
   - board: nice_nano@2.0.0//zmk
-    shield: settings_reset
-  # dongle
-  - board: xiao_ble//zmk
-    shield: kyria_rev2_dongle prospector_adapter
-  # dongle settings
-  - board: xiao_ble//zmk
     shield: settings_reset
