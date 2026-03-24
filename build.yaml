@@ -14,20 +14,20 @@
 ---
 include:
   # dongle
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: kyria_rev2_dongle prospector_adapter
   # dongle settings
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: settings_reset
   # left
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano_v2
     shield: kyria_rev2_left nice_view_adapter nice_view
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   # right
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano_v2
     shield: kyria_rev2_right nice_view_adapter nice_view
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   # settings
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano_v2
     shield: settings_reset
