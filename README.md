@@ -17,23 +17,7 @@ The dongle/receiver approach improves battery life of the peripheral halves by h
 
 ## Keymaps
 
-### Default Layer (QWERTY)
-Standard QWERTY layout with modifier keys and layer access:
-- **Mods**: ESC, Tab, Shift, Ctrl, Alt, GUI
-- **Layer Access**: Mo1 and Mo2 for Nav and Num layers
-- **Special**: Backtick, Enter, Space, Backspace
-
-### Nav Layer
-Navigation and window management:
-- **Arrow Keys**: Up, Down, Left, Right
-- **Window Management**: CMD+Left/Right, Alt+Left/Right for app/window switching
-- **Ctrl+Up/Down**: Jump between paragraphs/blocks
-
-### Num Layer
-Numbers and special characters:
-- **Numbers**: 0-9 arranged in standard calculator layout
-- **Symbols**: !, @, #, $, %, ^, &, *
-- **Parentheses**: ( and )
+![Default Layer](docs/keymap.svg)
 
 ## Build Configuration
 
