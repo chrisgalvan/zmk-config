@@ -16,7 +16,7 @@ manifest:
     # dongle
     - name: prospector-zmk-module
       remote: carrefinho
-      revision: feat/new-status-screens
+      revision: main
     # nice-view-battery
     - name: nice-view-battery
       remote: infely
