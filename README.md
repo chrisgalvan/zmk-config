@@ -1,5 +1,8 @@
 # Kyria Rev2 ZMK Configuration
 
+**Important**
+> This branch targets ZMK v4 (main branch). ZMK v3 is maintained in the `0.3` branch.
+
 My custom configuration for the Kyria Rev2 ergonomic split keyboard. This repository contains the ZMK firmware configuration, keymaps, and device tree overlays.
 
 ## Hardware
